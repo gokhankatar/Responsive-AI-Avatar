@@ -1,0 +1,35 @@
+
+const scrollToTop = document.querySelector('.scroll-to-top')
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTop.style.display = "grid"
+    } else {
+        scrollToTop.style.display = "none"
+    }
+})
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerview: 1,
+        },
+        768: {
+            slidesPerview: 2,
+        },
+        1024: {
+            slidesPerview: 2,
+        }
+
+    }
+}); 
+
+
+// AOS
+AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+});

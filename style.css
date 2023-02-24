@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1.2rem;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+/* Bg */
+.bg-2 {
+    background-color: #121212;
+}
+
+/* Border Custom */
+
+.border-custom {
+    border: 1px solid #444;
+    transition: all .5 ease-in-out;
+}
+
+.border-custom:hover {
+    border-color: var(--bs-blue);
+}
+
+/* Service */
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    transition: all .8 ease-in-out;
+}
+
+.icon:hover {
+    background-color: var(--bs-blue);
+
+}
+
+.service:hover .icon {
+    background-color: var(--bs-blue);
+}
+
+/* Card */
+
+.card-title {
+    transition: all .5s ease-in-out;
+}
+
+.card-title:hover {
+    color: var(--bs-blue);
+}
+
+.card {
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    border: 2px solid var(--bs-blue);
+}
+
+.card:hover .card-title {
+    color: var(--bs-blue);
+}
+
+/* Team */
+.team-member .divider {
+    background-color: #555;
+    height: 1px;
+}
+
+.team-member .links .icon {
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #555;
+}
+
+
+.team-member .links .icon:hover {
+    background-color: var(--bs-blue);
+    border-color: var(--bs-blue);
+}
+
+/* Contact */
+#contact .form-control {
+    background-color: transparent;
+    border: 1px solid #555;
+    border-radius: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+#insta-section {
+    position: relative;
+}
+
+#insta-section .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Footer */
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--bs-body);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Scroll to top */
+.scroll-to-top {
+    text-decoration: none;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.scroll-to-top:hover {
+    color: #fff;
+}
